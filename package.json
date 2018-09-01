@@ -13,7 +13,9 @@
     "express": "^4.16.3",
     "mongodb": "^3.1.4",
     "mongoose": "^5.2.12",
-    "async": "^2.6.1"
+    "async": "^2.6.1",
+    "pug": "^2.0.3",
+    "moment": "^2.22.2"
   },
   "engines": {
     "node": "8.x"
