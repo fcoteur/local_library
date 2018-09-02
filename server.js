@@ -2,6 +2,12 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var pug = require('pug');
+const { body,validationResult } = require('express-validator/check');
+const { sanitizeBody } = require('express-validator/filter');
+var bodyParser = require('body-parser')
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 var mongoose = require('mongoose');
 var mongoDB = process.env.MONGO_DB;
